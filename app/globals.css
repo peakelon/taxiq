@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 248 250 252;
+  --foreground: 15 23 42;
+  --brand-blue: 26 54 93;
+  --brand-green: 56 161 105;
+}
+
+.dark {
+  --background: 2 6 23;
+  --foreground: 226 232 240;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+}
+
+.gradient-hero {
+  background: radial-gradient(circle at top right, rgba(56, 161, 105, 0.22), transparent 40%),
+    radial-gradient(circle at top left, rgba(26, 54, 93, 0.3), transparent 45%);
+}
